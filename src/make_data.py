@@ -1,19 +1,30 @@
+import random
 import pandas as pd
+random.seed(42)
 
-rows = [
-    ("Swiggy order 450","Food"),
-    ("Zomato payment 320","Food"),
-    ("Uber ride to college","Transport"),
-    ("Ola Cab 180","Transport"),
-    ("Metro card recharge","Transport"),
-    ("Jio recharge 299","Bills"),
-    ("Electricity bill paid","Bills"),
-    ("Amazon purchase shoes","Shopping"),
-    ("Myntra order 1200","Shopping"),
-    ("Netflix subscription","Entertainment"),
-    ("BookMyShow movie tickets","Entertainment"),
-    ("Apollo Pharmacy","Health"),
+merchants={
+    "Food":["Swiggy","Zomato","Dominos","McDonalds","KFC","Starbucks","Chai point","Haldirams","Brbeque nation","Burger King"],
+    "Transport":["Uber","Ola","Rapido","IRCTC","Redbus","Metro Card","indian oil","HP Petrol Pump","FASTag","MakeMyTrip"],
+    "Bills":["Jio","Airtel","Vi","Electricity Board","BSNL Broadband","Tata Power","Gas Cylinder","Water Bill","Mahanagar Gas","ACT Fibernet"],
+    "Shopping":["Amazon","Flipcart","Myntra","Ajio","Nykaa","Big Bazaar","Meesho","Decathlon","Reliance","Trends","DMart","Croma"],
+    "Entertainment":["Netflix","Hotstar","Prime Video","Sony Liv","Zee5","Disney+","BookMyShow","PVR Cinemas","Inox Cinemas","IMAX"],
+    "Health":["Apollo Pharmacy","Medlife","1mg","Netmeds","PharmEasy","Practo","Fortis Hospital","Max Hospital","AIIMS","Manipal Hospital","Medplus","Cult Fit"],
+}
+templates=[
+    "UPI-{m}-{n}","Paid to {m}","{m}order {a}","POS {n}{m}","{m}payment Rs {a}","Debited Rs {a}at {m}","{m}{a}","UPI/{n}/{m}","{m}online payment","Txn at {m} Rs {a}",
 ]
-df=pd.DataFrame(rows, columns=["description","category"])
+
+rows=[]
+for category, names in merchants.items():
+    for i in range(40):
+        m=random.choice(names)
+        t=random.choice(templates)
+        text=t.format(m=m,n=random.randint(1000,9999),a=random.randint(50,2500))
+        rows.append((text,category))
+
+df=pd.DataFrame(rows,columns=["description","category"])
+df=df.drop_duplicates().sample(frac=1,random_state=42)
 df.to_csv("data/transactions.csv",index=False)
-print(df)
+print(df.shape)
+print(df["category"].value_counts())
+print(df.head(10))
