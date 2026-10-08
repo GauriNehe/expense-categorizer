@@ -10,8 +10,10 @@ merchants={
     "Entertainment":["Netflix","Hotstar","Prime Video","Sony Liv","Zee5","Disney+","BookMyShow","PVR Cinemas","Inox Cinemas","IMAX"],
     "Health":["Apollo Pharmacy","Medlife","1mg","Netmeds","PharmEasy","Practo","Fortis Hospital","Max Hospital","AIIMS","Manipal Hospital","Medplus","Cult Fit"],
 }
-templates=[
-    "UPI-{m}-{n}","Paid to {m}","{m}order {a}","POS {n}{m}","{m}payment Rs {a}","Debited Rs {a}at {m}","{m}{a}","UPI/{n}/{m}","{m}online payment","Txn at {m} Rs {a}",
+templates = [
+    "UPI-{m}-{n}", "Paid to {m}", "{m} order {a}", "POS {n} {m}",
+    "{m} payment Rs {a}", "Debited Rs {a} at {m}", "{m} {a}",
+    "UPI/{n}/{m}", "{m} online payment", "Txn at {m} Rs {a}",
 ]
 
 rows=[]
