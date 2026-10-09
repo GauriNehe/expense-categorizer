@@ -3,17 +3,35 @@
 <head>
   <meta charset="utf-8">
   <title>Smart Expense Categorizer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <h1>Smart Expense Categorizer</h1>
-  <form method="post">
+
+  <form method="post" action="/">
     <input type="text" name="text" size="50" placeholder="e.g. Swiggy order 450" required>
     <button type="submit">Categorize</button>
   </form>
+
   {% if result %}
     <h2>{{ result.category }}</h2>
     <p>Text: {{ result.text }}</p>
     <p>Confidence: {{ result.confidence }}</p>
+
+    <form method="post" action="/correct">
+      <input type="hidden" name="text" value="{{ result.text }}">
+      <p>Wrong or not sure? Pick the right category:</p>
+      <select name="category">
+        {% for c in categories %}
+          <option value="{{ c }}">{{ c }}</option>
+        {% endfor %}
+      </select>
+      <button type="submit">Save correction</button>
+    </form>
+  {% endif %}
+
+  {% if saved %}
+    <p>Saved as {{ saved }}. Thank you!</p>
   {% endif %}
 </body>
 </html>

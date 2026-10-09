@@ -1,0 +1,138 @@
+/* Soft Aesthetic — Smart Expense Categorizer */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+--pink: #e9a9c3;
+--pink-dark: #bd7195;
+--lavender: #eee7fa;
+--cream: #fffaf7;
+--text: #514558;
+--muted: #8c8194;
+--white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+min-height: 100vh;
+padding: 55px 20px;
+font-family: 'Poppins', sans-serif;
+color: var(--text);
+background:
+radial-gradient(ellipse at top left, #f9dce9 0, transparent 45%),
+radial-gradient(ellipse at bottom right, #e8defa 0, transparent 45%),
+var(--cream);
+}
+
+h1 {
+max-width: 680px;
+margin: 0 auto 12px;
+text-align: center;
+font-size: clamp(28px, 5vw, 42px);
+font-weight: 800;
+letter-spacing: -1.5px;
+color: #795c7d;
+}
+
+h1::before {
+content: "✿ ";
+color: var(--pink-dark);
+}
+
+body > p,
+body > h2,
+body > form {
+max-width: 680px;
+margin-left: auto;
+margin-right: auto;
+}
+
+form {
+background: rgba(255, 255, 255, 0.86);
+border: 1px solid #f1e4ed;
+border-radius: 24px;
+padding: 26px;
+margin-top: 25px;
+box-shadow: 0 12px 35px rgba(128, 91, 125, 0.09);
+}
+
+input[type="text"],
+select {
+width: 100%;
+min-height: 52px;
+padding: 14px 16px;
+border: 1px solid #e9d9e8;
+border-radius: 14px;
+background: #fffafd;
+color: var(--text);
+font: inherit;
+outline: none;
+transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+border-color: var(--pink);
+box-shadow: 0 0 0 4px rgba(233, 169, 195, 0.18);
+}
+
+button {
+width: 100%;
+min-height: 50px;
+margin-top: 16px;
+padding: 13px 20px;
+border: none;
+border-radius: 14px;
+background: linear-gradient(135deg, #eab0c9, #cbb6eb);
+color: #4e3c56;
+font: inherit;
+font-weight: 700;
+cursor: pointer;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 18px rgba(174, 129, 174, 0.22);
+}
+
+h2 {
+margin-top: 28px;
+padding: 20px 24px;
+border-radius: 20px;
+background: #f0e8fb;
+color: #765b91;
+text-align: center;
+overflow-wrap: anywhere;
+}
+
+p {
+line-height: 1.8;
+overflow-wrap: anywhere;
+}
+
+form p {
+color: var(--muted);
+font-size: 14px;
+}
+
+body > p {
+padding: 14px 20px;
+border-radius: 14px;
+background: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 480px) {
+body {
+padding: 32px 15px;
+}
+
+form {
+padding: 20px;
+border-radius: 20px;
+}
+}
