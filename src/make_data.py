@@ -3,7 +3,7 @@ import pandas as pd
 random.seed(42)
 
 merchants={
-    "Food":["Swiggy","Zomato","Dominos","McDonalds","KFC","Starbucks","Chai point","Haldirams","Brbeque nation","Burger King"],
+    "Food":["Swiggy","Zomato","Dominos","McDonalds","KFC","Starbucks","Chai point","Haldirams","Barbeque nation","Burger King"],
     "Transport":["Uber","Ola","Rapido","IRCTC","Redbus","Metro Card","indian oil","HP Petrol Pump","FASTag","MakeMyTrip"],
     "Bills":["Jio","Airtel","Vi","Electricity Board","BSNL Broadband","Tata Power","Gas Cylinder","Water Bill","Mahanagar Gas","ACT Fibernet"],
     "Shopping":["Amazon","Flipcart","Myntra","Ajio","Nykaa","Big Bazaar","Meesho","Decathlon","Reliance","Trends","DMart","Croma"],
@@ -18,7 +18,8 @@ templates = [
 
 rows=[]
 for category, names in merchants.items():
-    for i in range(40):
+    samples = 200 if category == "Transport" else 100
+    for i in range(samples):
         m=random.choice(names)
         t=random.choice(templates)
         text=t.format(m=m,n=random.randint(1000,9999),a=random.randint(50,2500))

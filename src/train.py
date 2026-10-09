@@ -23,3 +23,9 @@ print("Accuracy:", accuracy_score(y_test, pred))
 for text, true, p in zip(X_test, y_test, pred):
     if true != p:
         print(text, "| true:", true, "| predicted:", p)
+
+import joblib
+
+joblib.dump(vec, "models/vectorizer.joblib")
+joblib.dump(model, "models/model.joblib")
+print("Saved model and vectorizer")

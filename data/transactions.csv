@@ -1,234 +1,646 @@
 description,category
-POS 5325 Tata Power,Bills
-Debited Rs 1415 at Max Hospital,Health
-Txn at Netmeds Rs 609,Health
-Zomato 1520,Food
-Ajio order 1952,Shopping
-UPI-FASTag-2528,Transport
-Uber 497,Transport
-POS 5335 Netmeds,Health
-BSNL Broadband online payment,Bills
-Zomato 1907,Food
-UPI/5982/Medlife,Health
-Burger King 1532,Food
-Ajio order 518,Shopping
-Uber online payment,Transport
-Medlife order 1723,Health
-POS 9561 Manipal Hospital,Health
-Chai point payment Rs 1378,Food
-Sony Liv payment Rs 1528,Entertainment
-Debited Rs 88 at HP Petrol Pump,Transport
-POS 9830 Dominos,Food
-1mg payment Rs 1848,Health
-Txn at Starbucks Rs 227,Food
-Meesho 2272,Shopping
-Prime Video payment Rs 2237,Entertainment
-Croma order 572,Shopping
-Netflix 482,Entertainment
-Hotstar online payment,Entertainment
-POS 6967 Mahanagar Gas,Bills
-POS 3677 Brbeque nation,Food
-KFC online payment,Food
-BSNL Broadband order 206,Bills
-Debited Rs 334 at Gas Cylinder,Bills
-Paid to Practo,Health
-POS 5543 Nykaa,Shopping
-UPI/7209/Sony Liv,Entertainment
-DMart 1941,Shopping
-Starbucks order 1505,Food
-POS 1333 Ajio,Shopping
-Tata Power payment Rs 1844,Bills
-UPI-AIIMS-8451,Health
-Txn at Max Hospital Rs 1242,Health
-Croma online payment,Shopping
-UPI/9041/Sony Liv,Entertainment
-Ajio payment Rs 865,Shopping
-POS 4681 Ola,Transport
-Txn at Trends Rs 393,Shopping
-Gas Cylinder payment Rs 64,Bills
-Ajio payment Rs 2039,Shopping
-Txn at Ola Rs 1013,Transport
-Max Hospital online payment,Health
-UPI/5871/Max Hospital,Health
-Debited Rs 1860 at AIIMS,Health
-UPI-Mahanagar Gas-5978,Bills
-Electricity Board payment Rs 492,Bills
-Jio 2179,Bills
-IMAX online payment,Entertainment
-UPI-DMart-2746,Shopping
-Debited Rs 1030 at Zomato,Food
-Tata Power 2320,Bills
-UPI/5530/Sony Liv,Entertainment
-Paid to BSNL Broadband,Bills
-Fortis Hospital online payment,Health
-POS 6147 Redbus,Transport
-UPI-IRCTC-9883,Transport
-UPI-Medlife-4920,Health
-POS 5375 Apollo Pharmacy,Health
-UPI-Metro Card-1821,Transport
-Practo payment Rs 524,Health
-Txn at Chai point Rs 2217,Food
-POS 7888 Vi,Bills
-Decathlon 654,Shopping
-Jio order 1736,Bills
-McDonalds online payment,Food
-POS 4116 IRCTC,Transport
-UPI/4501/Water Bill,Bills
-Meesho 2408,Shopping
-POS 5088 Tata Power,Bills
-HP Petrol Pump order 1265,Transport
-Amazon online payment,Shopping
-Fortis Hospital payment Rs 456,Health
-Croma order 313,Shopping
-Brbeque nation payment Rs 506,Food
-Zomato online payment,Food
-POS 3504 Burger King,Food
-Dominos 1626,Food
-Txn at FASTag Rs 917,Transport
-Electricity Board order 1738,Bills
-Txn at Reliance Rs 432,Shopping
-POS 8619 Trends,Shopping
-Txn at MakeMyTrip Rs 1045,Transport
-IMAX 862,Entertainment
-Txn at Inox Cinemas Rs 461,Entertainment
-Txn at HP Petrol Pump Rs 350,Transport
-UPI/3705/Rapido,Transport
-Cult Fit payment Rs 1169,Health
-UPI/1096/Meesho,Shopping
-Debited Rs 1050 at Rapido,Transport
-Myntra order 1618,Shopping
-McDonalds order 2071,Food
-Paid to Nykaa,Shopping
-Disney+ payment Rs 2326,Entertainment
-UPI/6325/Netflix,Entertainment
-UPI-Zomato-5506,Food
-Txn at Zomato Rs 180,Food
-POS 9288 FASTag,Transport
-UPI-Metro Card-4770,Transport
-POS 1387 Electricity Board,Bills
-Txn at Vi Rs 1713,Bills
-Decathlon 897,Shopping
-BookMyShow online payment,Entertainment
-UPI-Mahanagar Gas-7049,Bills
-Water Bill payment Rs 428,Bills
-Debited Rs 1804 at Netflix,Entertainment
-Paid to Ajio,Shopping
-UPI-Gas Cylinder-8711,Bills
-Dominos online payment,Food
-Debited Rs 380 at Big Bazaar,Shopping
-Rapido 2021,Transport
-Debited Rs 2094 at Burger King,Food
-Water Bill order 1212,Bills
-POS 8449 Big Bazaar,Shopping
-Txn at Zee5 Rs 2368,Entertainment
-Swiggy payment Rs 781,Food
-Haldirams online payment,Food
-Paid to Fortis Hospital,Health
-PVR Cinemas payment Rs 1079,Entertainment
-Txn at Haldirams Rs 76,Food
-UPI-Zomato-2796,Food
-Nykaa 2254,Shopping
-Txn at Brbeque nation Rs 2348,Food
-Txn at Decathlon Rs 1915,Shopping
-KFC 1908,Food
-Debited Rs 676 at BookMyShow,Entertainment
-IRCTC 724,Transport
-Decathlon order 2225,Shopping
-PharmEasy online payment,Health
-Medlife online payment,Health
-Paid to indian oil,Transport
-Paid to Netflix,Entertainment
-HP Petrol Pump payment Rs 2326,Transport
-UPI/9479/Metro Card,Transport
-POS 1339 Medlife,Health
-Paid to HP Petrol Pump,Transport
-Txn at Meesho Rs 1622,Shopping
-UPI/3340/Chai point,Food
-POS 6813 PVR Cinemas,Entertainment
-Txn at BookMyShow Rs 1370,Entertainment
-Mahanagar Gas payment Rs 600,Bills
-POS 2290 Swiggy,Food
-IMAX payment Rs 1066,Entertainment
-UPI-IRCTC-2163,Transport
-Tata Power online payment,Bills
-Sony Liv 2324,Entertainment
-POS 6107 FASTag,Transport
-Amazon 1706,Shopping
-Paid to Zee5,Entertainment
-Paid to Swiggy,Food
-Txn at Airtel Rs 1465,Bills
-Ola 1784,Transport
-POS 5499 Decathlon,Shopping
-Max Hospital 818,Health
-POS 6016 BookMyShow,Entertainment
-Manipal Hospital 423,Health
+Txn at Netmeds Rs 786,Health
+UPI-Medplus-3807,Health
+Medlife payment Rs 2359,Health
+Txn at Jio Rs 550,Bills
+KFC 1278,Food
+Manipal Hospital 1813,Health
+UPI-Manipal Hospital-3938,Health
+POS 5687 Amazon,Shopping
+POS 2017 Disney+,Entertainment
 Ola online payment,Transport
-Paid to Disney+,Entertainment
-Mahanagar Gas payment Rs 82,Bills
-Paid to Brbeque nation,Food
-Dominos 1188,Food
-Debited Rs 560 at Airtel,Bills
-Mahanagar Gas order 572,Bills
-Vi payment Rs 912,Bills
-PharmEasy order 294,Health
-Debited Rs 155 at Cult Fit,Health
-Paid to Jio,Bills
-POS 6514 Dominos,Food
-POS 2139 Burger King,Food
-HP Petrol Pump online payment,Transport
-POS 3847 1mg,Health
-Decathlon order 1893,Shopping
-McDonalds payment Rs 750,Food
-BookMyShow order 1156,Entertainment
-Txn at MakeMyTrip Rs 1345,Transport
-UPI/2166/Cult Fit,Health
-Flipcart payment Rs 1162,Shopping
-UPI/6582/PVR Cinemas,Entertainment
-UPI-Manipal Hospital-3870,Health
-UPI-indian oil-7396,Transport
-UPI/1887/indian oil,Transport
-Txn at Gas Cylinder Rs 1093,Bills
-POS 9834 HP Petrol Pump,Transport
-Hotstar 353,Entertainment
-Netflix online payment,Entertainment
-UPI-IMAX-3485,Entertainment
-UPI-Hotstar-5658,Entertainment
-UPI/8736/Fortis Hospital,Health
-Txn at PharmEasy Rs 1791,Health
-Paid to Sony Liv,Entertainment
-UPI/5092/Redbus,Transport
+UPI-Nykaa-8873,Shopping
+IRCTC payment Rs 1528,Transport
+UPI-Ola-5658,Transport
+Dominos payment Rs 912,Food
+Txn at HP Petrol Pump Rs 1915,Transport
+Paid to BSNL Broadband,Bills
+BSNL Broadband 2210,Bills
+Txn at Ola Rs 467,Transport
+UPI-Burger King-2343,Food
+Txn at Starbucks Rs 227,Food
+Flipcart payment Rs 1065,Shopping
+Haldirams order 1265,Food
+Txn at Croma Rs 1783,Shopping
+Swiggy 497,Food
+Debited Rs 2266 at BookMyShow,Entertainment
+Debited Rs 1681 at Max Hospital,Health
+AIIMS 2332,Health
+Trends 1868,Shopping
+Debited Rs 1683 at Croma,Shopping
+Barbeque nation payment Rs 506,Food
+UPI/5557/FASTag,Transport
+POS 4116 McDonalds,Food
+Txn at Tata Power Rs 265,Bills
+indian oil payment Rs 550,Transport
+Debited Rs 1286 at IMAX,Entertainment
+UPI-FASTag-8451,Transport
+POS 7888 Rapido,Transport
+Amazon 1673,Shopping
+Metro Card payment Rs 524,Transport
+UPI/9433/Myntra,Shopping
+Inox Cinemas order 1998,Entertainment
+POS 7779 Water Bill,Bills
+Txn at Rapido Rs 1713,Transport
+Debited Rs 1050 at Dominos,Food
+indian oil order 2225,Transport
+Txn at Zomato Rs 180,Food
+1mg payment Rs 1149,Health
+Debited Rs 623 at Cult Fit,Health
+Debited Rs 2328 at Airtel,Bills
+Zee5 604,Entertainment
+UPI-AIIMS-6890,Health
+Starbucks online payment,Food
 Paid to IRCTC,Transport
+Txn at Vi Rs 335,Bills
+KFC online payment,Food
+Txn at Reliance Rs 578,Shopping
+Txn at FASTag Rs 461,Transport
+Paid to Reliance,Shopping
+UPI/9479/Starbucks,Food
+Txn at Ola Rs 1465,Transport
+Barbeque nation payment Rs 82,Food
+UPI-Ola-6061,Transport
 Water Bill online payment,Bills
-Chai point payment Rs 914,Food
-HP Petrol Pump order 801,Transport
-Txn at Hotstar Rs 467,Entertainment
-1mg payment Rs 2035,Health
-Prime Video payment Rs 273,Entertainment
-Netflix payment Rs 517,Entertainment
-Txn at Reliance Rs 1862,Shopping
+HP Petrol Pump online payment,Transport
+Metro Card payment Rs 2326,Transport
+Apollo Pharmacy payment Rs 1259,Health
+Debited Rs 165 at Flipcart,Shopping
+POS 6267 ACT Fibernet,Bills
+Debited Rs 1860 at FASTag,Transport
+Paid to Airtel,Bills
+UPI-Starbucks-1821,Food
+POS 1844 Cult Fit,Health
+POS 9834 Haldirams,Food
+Paid to Manipal Hospital,Health
+Txn at Airtel Rs 1624,Bills
+POS 2290 Swiggy,Food
+Debited Rs 1960 at Flipcart,Shopping
+Paid to Metro Card,Transport
+Txn at Haldirams Rs 76,Food
+UPI/5951/Ola,Transport
+Ola payment Rs 1751,Transport
+UPI/6325/Uber,Transport
+Uber order 682,Transport
+Max Hospital order 734,Health
+Big Bazaar 1851,Shopping
+indian oil payment Rs 1083,Transport
+UPI-Barbeque nation-7049,Food
+Paid to Medlife,Health
+UPI/6896/PharmEasy,Health
+POS 3362 Apollo Pharmacy,Health
+Metro Card 2320,Transport
+Txn at Ajio Rs 2061,Shopping
+UPI/3705/Dominos,Food
+Txn at BSNL Broadband Rs 1807,Bills
+Cult Fit online payment,Health
+Haldirams order 801,Food
+Ola order 202,Transport
+UPI/7812/FASTag,Transport
+Croma order 634,Shopping
+Txn at Meesho Rs 1066,Shopping
+POS 6942 HP Petrol Pump,Transport
+POS 9830 Dominos,Food
+UPI-FASTag-2121,Transport
+Ola 1405,Transport
+UPI-Medplus-2531,Health
+Rapido payment Rs 2035,Transport
+POS 5325 Starbucks,Food
+POS 9285 Apollo Pharmacy,Health
+Ola order 1723,Transport
+Starbucks payment Rs 1844,Food
+PVR Cinemas online payment,Entertainment
+Txn at Burger King Rs 1345,Food
+Big Bazaar online payment,Shopping
+Redbus 2129,Transport
+Txn at 1mg Rs 401,Health
+IRCTC 926,Transport
+McDonalds 724,Food
+Netflix 62,Entertainment
+Electricity Board order 358,Bills
+UPI/2118/Vi,Bills
+Big Bazaar payment Rs 1876,Shopping
+UPI/8851/Medlife,Health
+UPI-Uber-5051,Transport
+Txn at Tata Power Rs 319,Bills
+Inox Cinemas payment Rs 1258,Entertainment
+Debited Rs 2359 at Fortis Hospital,Health
+Paid to indian oil,Transport
+Manipal Hospital payment Rs 351,Health
+Txn at Uber Rs 2003,Transport
+UPI/3509/Prime Video,Entertainment
+Txn at Chai point Rs 2217,Food
+Jio order 2204,Bills
+UPI-AIIMS-9584,Health
+UPI-Amazon-2330,Shopping
+Tata Power order 324,Bills
+UPI-Flipcart-4906,Shopping
+POS 2245 Fortis Hospital,Health
+Txn at Gas Cylinder Rs 2196,Bills
+Debited Rs 781 at Prime Video,Entertainment
+Sony Liv online payment,Entertainment
+Debited Rs 1501 at Inox Cinemas,Entertainment
+UPI/8601/Vi,Bills
+Medplus online payment,Health
+Txn at Manipal Hospital Rs 1386,Health
+POS 3449 Nykaa,Shopping
+UPI-Max Hospital-6642,Health
+Electricity Board 1908,Bills
+Debited Rs 1535 at Mahanagar Gas,Bills
+Debited Rs 1869 at Gas Cylinder,Bills
+Uber 2179,Transport
+HP Petrol Pump order 1212,Transport
+Jio order 1315,Bills
+Txn at MakeMyTrip Rs 658,Transport
+Dominos 1188,Food
+Txn at IRCTC Rs 610,Transport
+Txn at BookMyShow Rs 159,Entertainment
+Debited Rs 353 at Jio,Bills
+Fortis Hospital 279,Health
+Debited Rs 654 at Electricity Board,Bills
+Txn at Gas Cylinder Rs 1760,Bills
+Paid to Vi,Bills
+MakeMyTrip online payment,Transport
+POS 5375 Uber,Transport
+POS 6107 Barbeque nation,Food
+Txn at Barbeque nation Rs 917,Food
+Debited Rs 88 at Haldirams,Food
+Tata Power order 1532,Bills
+Txn at Netmeds Rs 2013,Health
+Swiggy online payment,Food
+Haldirams online payment,Food
+Flipcart 1922,Shopping
+Debited Rs 1859 at Prime Video,Entertainment
+BSNL Broadband payment Rs 541,Bills
+Txn at Redbus Rs 1848,Transport
+Nykaa 2203,Shopping
+Paid to Nykaa,Shopping
+Reliance order 751,Shopping
+Paid to DMart,Shopping
+Haldirams payment Rs 428,Food
+UPI/4948/AIIMS,Health
+Electricity Board 81,Bills
+BookMyShow 2258,Entertainment
+Barbeque nation payment Rs 600,Food
+UPI/3340/Chai point,Food
+Prime Video payment Rs 1228,Entertainment
+UPI/8404/BSNL Broadband,Bills
+MakeMyTrip order 455,Transport
+Uber payment Rs 1585,Transport
+Netflix online payment,Entertainment
+UPI/1510/BSNL Broadband,Bills
+Electricity Board payment Rs 612,Bills
+POS 5471 HP Petrol Pump,Transport
+UPI/1911/Inox Cinemas,Entertainment
+UPI-Redbus-1753,Transport
+Reliance payment Rs 1076,Shopping
+HP Petrol Pump 818,Transport
+Zomato 1520,Food
+Debited Rs 2360 at Inox Cinemas,Entertainment
+POS 4538 Mahanagar Gas,Bills
+Txn at Tata Power Rs 2496,Bills
+Debited Rs 1198 at Netmeds,Health
+UPI/5350/IMAX,Entertainment
+Chai point payment Rs 64,Food
+UPI-Medlife-2468,Health
+Medlife payment Rs 1606,Health
+UPI-MakeMyTrip-3870,Transport
+POS 7965 MakeMyTrip,Transport
+UPI-Vi-5059,Bills
+McDonalds payment Rs 492,Food
+Debited Rs 1766 at HP Petrol Pump,Transport
+Big Bazaar 1191,Shopping
+Practo payment Rs 373,Health
+Dominos 1626,Food
+Ola 353,Transport
+Paid to IMAX,Entertainment
+Rapido payment Rs 2237,Transport
+IRCTC online payment,Transport
+Paid to Redbus,Transport
+POS 9288 Barbeque nation,Food
+ACT Fibernet order 228,Bills
+Swiggy order 1736,Food
+Flipcart payment Rs 1877,Shopping
+Paid to Chai point,Food
+Debited Rs 1100 at Hotstar,Entertainment
+Water Bill payment Rs 2472,Bills
+UPI/5871/HP Petrol Pump,Transport
+Zomato 1907,Food
+Txn at HP Petrol Pump Rs 1001,Transport
+Uber 83,Transport
+Swiggy payment Rs 213,Food
+UPI-IMAX-8314,Entertainment
+UPI-Rapido-1757,Transport
+BookMyShow order 1676,Entertainment
+Zee5 payment Rs 2398,Entertainment
+Swiggy payment Rs 781,Food
+UPI-Zomato-5506,Food
+Medplus order 1594,Health
+Txn at Uber Rs 588,Transport
+UPI/1570/Trends,Shopping
+POS 1717 Nykaa,Shopping
+UPI-Zee5-2465,Entertainment
+Debited Rs 793 at Tata Power,Bills
+Debited Rs 2094 at Burger King,Food
+UPI-Chai point-7396,Food
+IRCTC payment Rs 865,Transport
+PVR Cinemas payment Rs 83,Entertainment
+UPI/5342/Ola,Transport
+POS 5088 Starbucks,Food
+UPI/6582/HP Petrol Pump,Transport
+Debited Rs 450 at AIIMS,Health
+Debited Rs 2335 at Airtel,Bills
+POS 3677 Barbeque nation,Food
+POS 1710 Mahanagar Gas,Bills
+Nykaa 1495,Shopping
+UPI/6355/IRCTC,Transport
+Debited Rs 364 at Jio,Bills
+Paid to Electricity Board,Bills
+UPI-Practo-8916,Health
+Debited Rs 1467 at Myntra,Shopping
+Myntra order 2133,Shopping
+UPI-Starbucks-4770,Food
+Paid to HP Petrol Pump,Transport
+UPI-Medlife-2615,Health
+UPI-Sony Liv-1372,Entertainment
+Redbus online payment,Transport
+Debited Rs 2082 at Meesho,Shopping
+Disney+ 235,Entertainment
+Debited Rs 2116 at Airtel,Bills
+PVR Cinemas order 1607,Entertainment
+Debited Rs 2484 at Max Hospital,Health
+UPI/8550/Cult Fit,Health
+Debited Rs 260 at Gas Cylinder,Bills
+Sony Liv payment Rs 971,Entertainment
+Vi order 384,Bills
+Txn at Uber Rs 1027,Transport
+UPI/9702/Rapido,Transport
+Medlife order 817,Health
+AIIMS order 1044,Health
+UPI-MakeMyTrip-3485,Transport
+Paid to Big Bazaar,Shopping
+Paid to Tata Power,Bills
+Paid to Cult Fit,Health
+Max Hospital 2367,Health
+indian oil order 794,Transport
+Txn at MakeMyTrip Rs 393,Transport
+POS 2113 1mg,Health
+Chai point payment Rs 1378,Food
+UPI/9698/Metro Card,Transport
+Txn at Sony Liv Rs 663,Entertainment
+Zomato online payment,Food
+Burger King 1532,Food
+Decathlon payment Rs 144,Shopping
+IRCTC 2324,Transport
+UPI/7077/DMart,Shopping
+POS 4711 Water Bill,Bills
+UPI-MakeMyTrip-9138,Transport
+Hotstar order 2005,Entertainment
+Debited Rs 2461 at Jio,Bills
+MakeMyTrip 862,Transport
+indian oil online payment,Transport
+Flipcart 2151,Shopping
+Water Bill 439,Bills
+UPI/4501/HP Petrol Pump,Transport
+Airtel 1046,Bills
+HP Petrol Pump payment Rs 1079,Transport
+UPI/5092/KFC,Food
+Txn at Ajio Rs 817,Shopping
+Metro Card online payment,Transport
+UPI/2204/Water Bill,Bills
+McDonalds payment Rs 750,Food
+Gas Cylinder order 790,Bills
+POS 8724 Ola,Transport
+Gas Cylinder order 616,Bills
+Apollo Pharmacy payment Rs 1638,Health
+POS 5335 IRCTC,Transport
+Txn at Netmeds Rs 1160,Health
+UPI-Apollo Pharmacy-9719,Health
+POS 7653 Decathlon,Shopping
+UPI-Chai point-8711,Food
+FASTag payment Rs 2060,Transport
+UPI-Vi-2503,Bills
+Txn at Disney+ Rs 947,Entertainment
+Debited Rs 1887 at BookMyShow,Entertainment
+UPI-Fortis Hospital-1274,Health
+Trends 2089,Shopping
+McDonalds online payment,Food
+POS 4681 Zomato,Food
+Vi online payment,Bills
+POS 4310 PVR Cinemas,Entertainment
+Hotstar 1133,Entertainment
+Starbucks order 1505,Food
+Paid to McDonalds,Food
+UPI/4203/Netmeds,Health
+Practo 2364,Health
+Paid to Swiggy,Food
+Apollo Pharmacy online payment,Health
+ACT Fibernet payment Rs 1008,Bills
+UPI-Gas Cylinder-8147,Bills
+Txn at Gas Cylinder Rs 1257,Bills
+Ajio online payment,Shopping
+Airtel online payment,Bills
+Netflix payment Rs 1422,Entertainment
+Debited Rs 1611 at Uber,Transport
+McDonalds order 2071,Food
+Debited Rs 1691 at Inox Cinemas,Entertainment
+Debited Rs 1866 at Uber,Transport
+Txn at Burger King Rs 1045,Food
+MakeMyTrip 1395,Transport
 Debited Rs 129 at Burger King,Food
-Disney+ order 720,Entertainment
-UPI/5722/Fortis Hospital,Health
-McDonalds order 2283,Food
-HP Petrol Pump 436,Transport
-UPI-Myntra-5262,Shopping
-Trends online payment,Shopping
-Big Bazaar 1776,Shopping
-Debited Rs 522 at Mahanagar Gas,Bills
-UPI/6728/Electricity Board,Bills
-Electricity Board 1954,Bills
-Tata Power order 711,Bills
-POS 5720 Apollo Pharmacy,Health
-Redbus 1278,Transport
-UPI/5557/AIIMS,Health
+Debited Rs 1804 at Uber,Transport
+Txn at indian oil Rs 746,Transport
+AIIMS order 744,Health
+UPI/5530/IRCTC,Transport
+POS 1724 Netflix,Entertainment
+Debited Rs 1399 at Fortis Hospital,Health
+POS 5720 Uber,Transport
+Netflix order 1234,Entertainment
+PVR Cinemas payment Rs 1710,Entertainment
 Paid to Max Hospital,Health
-UPI-Myntra-1757,Shopping
-Medlife payment Rs 1442,Health
-POS 1525 Swiggy,Food
-Inox Cinemas payment Rs 2060,Entertainment
-UPI-MakeMyTrip-2343,Transport
-Tata Power 523,Bills
+Debited Rs 1722 at AIIMS,Health
+Txn at Zomato Rs 1013,Food
+DMart online payment,Shopping
+Uber online payment,Transport
+Disney+ 1741,Entertainment
+Txn at indian oil Rs 1370,Transport
+Paid to Gas Cylinder,Bills
+Txn at HP Petrol Pump Rs 1242,Transport
+Txn at Meesho Rs 678,Shopping
+Decathlon online payment,Shopping
+Meesho 563,Shopping
+Txn at Rapido Rs 720,Transport
+POS 2698 Big Bazaar,Shopping
+Debited Rs 1932 at BookMyShow,Entertainment
+indian oil order 201,Transport
+Txn at DMart Rs 2358,Shopping
+Debited Rs 2299 at IMAX,Entertainment
+Txn at indian oil Rs 1093,Transport
+Txn at PVR Cinemas Rs 1995,Entertainment
+Txn at Haldirams Rs 350,Food
+UPI/5215/Prime Video,Entertainment
+Fortis Hospital payment Rs 1277,Health
+Txn at indian oil Rs 1622,Transport
+POS 5055 BookMyShow,Entertainment
+Zee5 online payment,Entertainment
+Debited Rs 1818 at Netmeds,Health
+UPI/5722/indian oil,Transport
+Meesho online payment,Shopping
+1mg payment Rs 803,Health
+UPI/1693/Big Bazaar,Shopping
+Zee5 payment Rs 2052,Entertainment
+POS 6514 Dominos,Food
+Amazon payment Rs 2497,Shopping
+Dominos online payment,Food
+indian oil order 572,Transport
+POS 7511 Rapido,Transport
+Tata Power order 1326,Bills
+Paid to Prime Video,Entertainment
+Txn at BookMyShow Rs 2481,Entertainment
+Debited Rs 1631 at Reliance,Shopping
+Dominos 2021,Food
+UPI-FASTag-5978,Transport
+UPI/1430/Ajio,Shopping
+DMart payment Rs 432,Shopping
+Txn at Reliance Rs 1964,Shopping
+Txn at HP Petrol Pump Rs 1195,Transport
+Disney+ order 822,Entertainment
+Txn at Mahanagar Gas Rs 1145,Bills
+UPI/2874/Rapido,Transport
+UPI-Uber-6464,Transport
+Debited Rs 2243 at Max Hospital,Health
+Debited Rs 1941 at Electricity Board,Bills
+UPI-Fortis Hospital-4625,Health
+Debited Rs 1030 at Zomato,Food
+UPI/5246/HP Petrol Pump,Transport
+UPI/7785/ACT Fibernet,Bills
+Paid to Rapido,Transport
+BSNL Broadband order 1449,Bills
+Reliance order 319,Shopping
+UPI/1317/Ola,Transport
+Paid to Apollo Pharmacy,Health
+UPI/5582/Inox Cinemas,Entertainment
+Debited Rs 315 at DMart,Shopping
+POS 6404 1mg,Health
+Debited Rs 331 at Uber,Transport
+UPI/9901/Zee5,Entertainment
+Airtel payment Rs 1395,Bills
+Paid to Mahanagar Gas,Bills
+1mg payment Rs 1084,Health
+POS 2988 FASTag,Transport
+POS 9843 PVR Cinemas,Entertainment
+POS 1387 IRCTC,Transport
+Uber payment Rs 1390,Transport
+HP Petrol Pump payment Rs 1095,Transport
+Debited Rs 2161 at Amazon,Shopping
+POS 6781 Ajio,Shopping
+Debited Rs 334 at indian oil,Transport
+UPI-Myntra-5700,Shopping
+Debited Rs 362 at Electricity Board,Bills
+Water Bill 492,Bills
+Txn at BSNL Broadband Rs 1490,Bills
+Metro Card payment Rs 1571,Transport
+UPI/7018/Croma,Shopping
+Rapido online payment,Transport
+Uber payment Rs 517,Transport
+POS 1339 Ola,Transport
+Decathlon 1952,Shopping
+Airtel 1440,Bills
+Txn at IRCTC Rs 947,Transport
+Paid to Ajio,Shopping
+PharmEasy order 286,Health
+Prime Video online payment,Entertainment
+Inox Cinemas 571,Entertainment
+Manipal Hospital order 2326,Health
+POS 7073 Practo,Health
+Txn at Disney+ Rs 715,Entertainment
+Debited Rs 2117 at MakeMyTrip,Transport
+Debited Rs 377 at Nykaa,Shopping
+POS 5914 Netmeds,Health
+Netmeds online payment,Health
+Debited Rs 1028 at HP Petrol Pump,Transport
+Debited Rs 1636 at Tata Power,Bills
+UPI/1887/Chai point,Food
+UPI-Redbus-5634,Transport
+IRCTC payment Rs 1359,Transport
+Cult Fit payment Rs 1224,Health
+POS 1841 IMAX,Entertainment
+MakeMyTrip payment Rs 1066,Transport
+POS 9625 Netmeds,Health
+Debited Rs 1330 at Ajio,Shopping
+UPI/6714/Disney+,Entertainment
+Redbus order 206,Transport
+Txn at Zee5 Rs 837,Entertainment
+UPI-Decathlon-7338,Shopping
+Medlife order 77,Health
+Txn at Airtel Rs 921,Bills
+Txn at Rapido Rs 331,Transport
+Haldirams 436,Food
+Debited Rs 2350 at Myntra,Shopping
+POS 5706 PVR Cinemas,Entertainment
+IRCTC 1954,Transport
+Rapido payment Rs 273,Transport
+PVR Cinemas order 1967,Entertainment
+UPI-Medlife-1104,Health
+UPI-IMAX-8575,Entertainment
+Txn at Fortis Hospital Rs 348,Health
+UPI-Trends-2298,Shopping
+Vi 992,Bills
+PVR Cinemas order 622,Entertainment
+UPI/5198/IRCTC,Transport
+POS 6016 indian oil,Transport
+Paid to Ola,Transport
+UPI/7947/BSNL Broadband,Bills
+POS 8319 BookMyShow,Entertainment
+UPI/7209/IRCTC,Transport
+Paid to Water Bill,Bills
+Debited Rs 1647 at Uber,Transport
+POS 7001 Flipcart,Shopping
+Debited Rs 2051 at AIIMS,Health
+POS 3441 FASTag,Transport
+POS 6070 Mahanagar Gas,Bills
+UPI/2902/Redbus,Transport
+POS 2480 Redbus,Transport
+Txn at Sony Liv Rs 235,Entertainment
+Txn at FASTag Rs 432,Transport
+HP Petrol Pump 654,Transport
+Debited Rs 827 at Myntra,Shopping
+Vi payment Rs 1381,Bills
+Flipcart payment Rs 1283,Shopping
+Flipcart online payment,Shopping
+MakeMyTrip 1732,Transport
+Paid to Practo,Health
+POS 9008 Hotstar,Entertainment
+POS 1310 Hotstar,Entertainment
+BSNL Broadband 2487,Bills
+Sony Liv order 1801,Entertainment
+POS 8183 Cult Fit,Health
+Medlife online payment,Health
+Txn at Sony Liv Rs 2415,Entertainment
+Starbucks order 711,Food
+HP Petrol Pump payment Rs 1625,Transport
+Uber 482,Transport
+POS 3504 Burger King,Food
+UPI/9041/IRCTC,Transport
+Zee5 payment Rs 2330,Entertainment
+UPI-Hotstar-7868,Entertainment
+Apollo Pharmacy payment Rs 2059,Health
+UPI/6728/IRCTC,Transport
+UPI/5712/Uber,Transport
+UPI-Inox Cinemas-1742,Entertainment
+Paid to AIIMS,Health
+Debited Rs 1415 at HP Petrol Pump,Transport
+Paid to Myntra,Shopping
+Debited Rs 559 at Amazon,Shopping
+POS 2102 Sony Liv,Entertainment
+FASTag order 830,Transport
+Txn at Barbeque nation Rs 2348,Food
+Txn at Fortis Hospital Rs 2095,Health
+Debited Rs 1687 at Redbus,Transport
+Trends 284,Shopping
+POS 2845 Zee5,Entertainment
+UPI-McDonalds-2163,Food
+KFC 1908,Food
+UPI/5982/Ola,Transport
+IRCTC 2442,Transport
+UPI-Zomato-2796,Food
+Cult Fit order 1347,Health
+FASTag 2048,Transport
+Txn at Hotstar Rs 1043,Entertainment
+Txn at DMart Rs 307,Shopping
+Tata Power 1094,Bills
+Decathlon order 409,Shopping
+UPI/8840/DMart,Shopping
+PVR Cinemas order 203,Entertainment
+UPI-HP Petrol Pump-7371,Transport
+Haldirams payment Rs 2326,Food
+POS 1517 Prime Video,Entertainment
+UPI/2269/Redbus,Transport
+1mg payment Rs 872,Health
+UPI-Hotstar-9972,Entertainment
+UPI-McDonalds-9883,Food
 McDonalds payment Rs 1003,Food
-Jio payment Rs 213,Bills
-UPI/9698/Disney+,Entertainment
-Debited Rs 1687 at BSNL Broadband,Bills
+Txn at Redbus Rs 2368,Transport
+Paid to Haldirams,Food
+Paid to PVR Cinemas,Entertainment
+UPI/9782/Flipcart,Shopping
+POS 9561 MakeMyTrip,Transport
+UPI/4993/HP Petrol Pump,Transport
+Zomato 1784,Food
+Txn at Water Bill Rs 1892,Bills
+UPI/4674/Vi,Bills
+POS 3165 Rapido,Transport
+Debited Rs 2177 at Prime Video,Entertainment
+Inox Cinemas payment Rs 1632,Entertainment
+Debited Rs 231 at Medplus,Health
+Tata Power order 1185,Bills
+Txn at Metro Card Rs 155,Transport
+indian oil order 1156,Transport
+POS 6411 PharmEasy,Health
+Txn at Meesho Rs 2284,Shopping
+Debited Rs 2202 at Inox Cinemas,Entertainment
+POS 6967 FASTag,Transport
+PharmEasy payment Rs 2150,Health
+Debited Rs 231 at Croma,Shopping
+McDonalds order 2283,Food
+Practo 371,Health
+POS 2922 Netmeds,Health
+Paid to KFC,Food
+MakeMyTrip 423,Transport
+Paid to Barbeque nation,Food
+POS 1111 Disney+,Entertainment
+Reliance order 724,Shopping
+UPI-BookMyShow-4189,Entertainment
+POS 8391 Flipcart,Shopping
+McDonalds order 1738,Food
+Mahanagar Gas order 1895,Bills
+UPI/9743/Fortis Hospital,Health
+Gas Cylinder payment Rs 665,Bills
+MakeMyTrip payment Rs 1074,Transport
+POS 2139 Burger King,Food
+Mahanagar Gas online payment,Bills
+Txn at Netmeds Rs 2264,Health
+UPI-Nykaa-6850,Shopping
+UPI-Tata Power-3854,Bills
+POS 6813 HP Petrol Pump,Transport
+Fortis Hospital online payment,Health
+Inox Cinemas 1463,Entertainment
+Practo payment Rs 2408,Health
+Debited Rs 2375 at Netflix,Entertainment
+Debited Rs 1259 at MakeMyTrip,Transport
+UPI/2615/Max Hospital,Health
+Txn at Netmeds Rs 1674,Health
+indian oil payment Rs 456,Transport
+Netflix order 899,Entertainment
+Disney+ payment Rs 1121,Entertainment
+UPI-Barbeque nation-2528,Food
+Sony Liv 1981,Entertainment
+Debited Rs 112 at Netmeds,Health
+Rapido payment Rs 1258,Transport
+Chai point payment Rs 914,Food
+UPI/8055/Jio,Bills
+Txn at Sony Liv Rs 1694,Entertainment
+Debited Rs 676 at indian oil,Transport
+Tata Power online payment,Bills
+POS 3847 Rapido,Transport
+Reliance online payment,Shopping
+Paid to Decathlon,Shopping
+Paid to Netflix,Entertainment
+Debited Rs 1420 at Gas Cylinder,Bills
+Electricity Board online payment,Bills
+Paid to FASTag,Transport
+Debited Rs 522 at FASTag,Transport
+Croma order 1887,Shopping
+Barbeque nation order 572,Food
+Disney+ online payment,Entertainment
+UPI/6295/ACT Fibernet,Bills
+UPI-Ola-4920,Transport
+Debited Rs 498 at Netflix,Entertainment
+Paid to Uber,Transport
+UPI/9395/Fortis Hospital,Health
+POS 1525 Swiggy,Food
+POS 6147 KFC,Food
+Debited Rs 560 at Ola,Transport
+Vi order 1076,Bills
+Txn at DMart Rs 913,Shopping
+Metro Card 523,Transport
