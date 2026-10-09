@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Smart Expense Categorizer</title>
+</head>
+<body>
+  <h1>Smart Expense Categorizer</h1>
+  <form method="post">
+    <input type="text" name="text" size="50" placeholder="e.g. Swiggy order 450" required>
+    <button type="submit">Categorize</button>
+  </form>
+  {% if result %}
+    <h2>{{ result.category }}</h2>
+    <p>Text: {{ result.text }}</p>
+    <p>Confidence: {{ result.confidence }}</p>
+  {% endif %}
+</body>
+</html>
