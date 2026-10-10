@@ -13,6 +13,10 @@
     <button type="submit">Categorize</button>
   </form>
 
+  {% if saved %}
+    <p>Saved as {{ saved }}. Thank you!</p>
+  {% endif %}
+
   {% if result %}
   <h2>{{ result.category }}</h2>
   {% if result.merchant %}<p>Merchant: {{ result.merchant }}</p>{% endif %}
@@ -21,18 +25,21 @@
   {% if result.confidence is not none %}<p>Confidence: {{ result.confidence }}</p>{% endif %}
 
   {% if result.merchant %}
+  <details {% if result.category == "Not sure" %}open{% endif %}>
+    <summary>Wrong category?</summary>
     <form method="post" action="/correct">
       <input type="hidden" name="text" value="{{ result.merchant }}">
-      <p>Wrong or not sure? Pick the right category:</p>
-      <select name="category">
+      <select name="category" required>
+        <option value="" selected disabled>Select category...</option>
         {% for c in categories %}
           <option value="{{ c }}">{{ c }}</option>
         {% endfor %}
       </select>
       <button type="submit">Save correction</button>
     </form>
+  </details>
   {% endif %}
-{% endif %}
+  {% endif %}
 
 </body>
 </html>
