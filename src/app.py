@@ -1,5 +1,6 @@
 import csv
 import os
+from parser import parse
 from flask import Flask, render_template, request
 from predict import predict_with_confidence, THRESHOLD
 
@@ -22,20 +23,31 @@ def save_correction(text, category):
 def home():
     result = None
     if request.method == "POST":
-        text = request.form["text"]
-        category, conf = predict_with_confidence(text)
-        if conf < THRESHOLD:
-            category = "Not sure"
-        result = {"text": text, "category": category, "confidence": round(float(conf), 2)}
+        raw = request.form["text"].strip()
+        info = parse(raw)
+        merchant = info["merchant"]
+        if merchant:
+            category, conf = predict_with_confidence(merchant)
+            if conf < THRESHOLD:
+                category = "Not sure"
+            conf = round(float(conf), 2)
+        else:
+            category, conf = "No merchant found", None
+        result = {
+            "merchant": merchant,
+            "amount": info["amount"],
+            "type": info["type"],
+            "category": category,
+            "confidence": conf,
+        }
     return render_template("index.html", result=result, categories=CATEGORIES, saved=None)
-
-
+    
 @app.route("/correct", methods=["POST"])
 def correct():
     text = request.form["text"].strip()
     category = request.form["category"]
     saved = None
-    if text and category in CATEGORIES:
+    if text and len(text) <= 60 and category in CATEGORIES:
         save_correction(text, category)
         saved = category
     return render_template("index.html", result=None, categories=CATEGORIES, saved=saved)
