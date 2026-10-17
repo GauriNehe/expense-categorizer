@@ -6,7 +6,23 @@ from parser import parse
 
 app = Flask(__name__, template_folder="../templates", static_folder="../static")
 
-CATEGORIES = ["Food", "Transport", "Bills", "Shopping", "Entertainment", "Health"]
+CATEGORIES = ["Food", "Transport", "Bills", "Shopping", "Entertainment",
+              "Health", "Education", "Money Transfer", "Money Received"]
+
+ICONS = {
+    "Food": "🍽️",
+    "Transport": "🚗",
+    "Bills": "💡",
+    "Shopping": "🛍️",
+    "Entertainment": "🎬",
+    "Health": "💊",
+    "Education": "🎓",
+    "Money Transfer": "💸",
+    "Money Received": "💰",
+    "Not sure": "❓",
+    "No merchant found": "🔍",
+}
+
 CORRECTIONS_FILE = "data/corrections.csv"
 
 
@@ -26,7 +42,11 @@ def home():
         raw = request.form["text"].strip()
         info = parse(raw)
         merchant = info["merchant"]
-        if merchant:
+        if info["type"] == "credit":
+            category, conf = "Money Received", None
+        elif info["transfer"]:
+            category, conf = "Money Transfer", None
+        elif merchant:
             category, conf = predict_with_confidence(merchant)
             if conf < THRESHOLD:
                 category = "Not sure"
@@ -43,7 +63,8 @@ def home():
     saved = request.args.get("saved")
     if saved not in CATEGORIES:
         saved = None
-    return render_template("index.html", result=result, categories=CATEGORIES, saved=saved)
+    return render_template("index.html", result=result, categories=CATEGORIES,
+                           icons=ICONS, saved=saved)
 
 
 @app.route("/correct", methods=["POST"])

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Smart Expense Categorizer</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=3">
 </head>
 <body>
   <h1>Smart Expense Categorizer</h1>
@@ -14,11 +14,11 @@
   </form>
 
   {% if saved %}
-    <p>Saved as {{ saved }}. Thank you!</p>
+    <p>Saved as {{ icons.get(saved, '') }} {{ saved }}. Thank you!</p>
   {% endif %}
 
   {% if result %}
-  <h2>{{ result.category }}</h2>
+  <h2 class="{% if result.category == 'Not sure' or result.category == 'No merchant found' %}unsure{% endif %}">{{ icons.get(result.category, '') }} {{ result.category }}</h2>
   {% if result.merchant %}<p>Merchant: {{ result.merchant }}</p>{% endif %}
   {% if result.amount is not none %}<p>Amount: Rs {{ result.amount }}</p>{% endif %}
   {% if result.type %}<p>Type: {{ result.type }}</p>{% endif %}
@@ -32,7 +32,7 @@
       <select name="category" required>
         <option value="" selected disabled>Select category...</option>
         {% for c in categories %}
-          <option value="{{ c }}">{{ c }}</option>
+          <option value="{{ c }}">{{ icons.get(c, '') }} {{ c }}</option>
         {% endfor %}
       </select>
       <button type="submit">Save correction</button>

@@ -5,6 +5,24 @@ CITIES = ["NEW DELHI", "DELHI", "KOLKATA", "KOLKATTA", "MUMBAI", "NOIDA", "BANGA
 NARRATION_HINTS = r"(?i)(by debit card|to transfer|by transfer|bulk posting|UPI/|\bINB\b|\bATM\b|OTHPOS|OTHPG|SBIPG)"
 
 
+def is_person_transfer(text):
+    if re.search(r"VPA\s+\d{8,}@", text, re.I):
+        return True
+    if re.search(r"UPI/\d+/\d{8,}@", text, re.I):
+        return True
+    if re.search(r"(?i)\b(IMPS|NEFT|RTGS)", text):
+        return True
+    return False
+
+
+def narration_type(text):
+    if re.search(r"(?i)\bby transfer|\bcsh dep|\bcredit interest", text):
+        return "credit"
+    if re.search(r"(?i)\bto transfer|\bby debit card|\batm wdl", text):
+        return "debit"
+    return None
+
+
 def clean_narration(text):
     t = text.strip()
 
@@ -54,8 +72,12 @@ def parse_sms(text):
 
 
 def parse(text):
+    transfer = is_person_transfer(text)
     if re.search(r"(?:Rs\.?|INR|₹)\s*\d", text, re.I):
-        return parse_sms(text)
-    if re.search(NARRATION_HINTS, text) or len(text.split()) <= 6:
-        return {"merchant": clean_narration(text), "amount": None, "type": None}
-    return {"merchant": "", "amount": None, "type": None}
+        info = parse_sms(text)
+    elif re.search(NARRATION_HINTS, text) or len(text.split()) <= 6:
+        info = {"merchant": clean_narration(text), "amount": None, "type": narration_type(text)}
+    else:
+        info = {"merchant": "", "amount": None, "type": narration_type(text)}
+    info["transfer"] = transfer
+    return info
