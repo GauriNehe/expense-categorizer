@@ -1,5 +1,7 @@
 # Smart Expense Categorizer
 
+![App screenshot](screenshots/app.png)
+
 A small machine-learning app that reads a bank SMS or statement line, pulls out the merchant, amount and debit/credit, and predicts a spending category (Food, Transport, Bills, Shopping, Entertainment, Health). When the model isn't confident it says **"Not sure"** instead of guessing, and you can correct it.
 
 ## How it works
