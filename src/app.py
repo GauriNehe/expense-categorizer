@@ -1,10 +1,10 @@
 import csv
 import os
-from parser import parse
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from predict import predict_with_confidence, THRESHOLD
+from parser import parse
 
-app = Flask(__name__, template_folder="../templates")
+app = Flask(__name__, template_folder="../templates", static_folder="../static")
 
 CATEGORIES = ["Food", "Transport", "Bills", "Shopping", "Entertainment", "Health"]
 CORRECTIONS_FILE = "data/corrections.csv"
@@ -40,19 +40,21 @@ def home():
             "category": category,
             "confidence": conf,
         }
-    return render_template("index.html", result=result, categories=CATEGORIES, saved=None)
-    
+    saved = request.args.get("saved")
+    if saved not in CATEGORIES:
+        saved = None
+    return render_template("index.html", result=result, categories=CATEGORIES, saved=saved)
+
+
 @app.route("/correct", methods=["POST"])
 def correct():
     text = request.form["text"].strip()
     category = request.form["category"]
-    saved = None
     if text and len(text) <= 60 and category in CATEGORIES:
         save_correction(text, category)
-        saved = category
-    return render_template("index.html", result=None, categories=CATEGORIES, saved=saved)
+        return redirect(url_for("home", saved=category))
+    return redirect(url_for("home"))
 
 
 if __name__ == "__main__":
     app.run(debug=True)
-    

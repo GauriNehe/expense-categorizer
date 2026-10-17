@@ -1,138 +1,195 @@
-/* Soft Aesthetic — Smart Expense Categorizer */
+/* Smart Expense Categorizer: clean fintech style */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
---pink: #e9a9c3;
---pink-dark: #bd7195;
---lavender: #eee7fa;
---cream: #fffaf7;
---text: #514558;
---muted: #8c8194;
---white: #ffffff;
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --accent: #4f46e5;
+  --accent-dark: #4338ca;
+  --accent-soft: #eef2ff;
+  --accent-line: #c7d2fe;
+  --warn: #92400e;
+  --warn-soft: #fffbeb;
+  --warn-line: #fcd34d;
 }
 
 * {
   box-sizing: border-box;
-  }
+}
 
 body {
-margin: 0;
-min-height: 100vh;
-padding: 55px 20px;
-font-family: 'Poppins', sans-serif;
-color: var(--text);
-background:
-radial-gradient(ellipse at top left, #f9dce9 0, transparent 45%),
-radial-gradient(ellipse at bottom right, #e8defa 0, transparent 45%),
-var(--cream);
+  margin: 0;
+  min-height: 100vh;
+  padding: 56px 20px 80px;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  border-top: 4px solid var(--accent);
 }
 
 h1 {
-max-width: 680px;
-margin: 0 auto 12px;
-text-align: center;
-font-size: clamp(28px, 5vw, 42px);
-font-weight: 800;
-letter-spacing: -1.5px;
-color: #795c7d;
+  max-width: 680px;
+  margin: 0 auto 28px;
+  font-size: clamp(26px, 4.5vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--ink);
 }
 
-h1::before {
-content: "✿ ";
-color: var(--pink-dark);
+h1::after {
+  content: "Paste a bank SMS or statement line to see its spending category.";
+  display: block;
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--muted);
 }
 
 body > p,
 body > h2,
-body > form {
-max-width: 680px;
-margin-left: auto;
-margin-right: auto;
+body > form,
+body > details {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form {
-background: rgba(255, 255, 255, 0.86);
-border: 1px solid #f1e4ed;
-border-radius: 24px;
-padding: 26px;
-margin-top: 25px;
-box-shadow: 0 12px 35px rgba(128, 91, 125, 0.09);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.04);
 }
 
-input[type="text"],
+textarea,
+select,
+input[type="text"] {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fbfcfe;
+  color: var(--ink);
+  font: inherit;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
 select {
-width: 100%;
-min-height: 52px;
-padding: 14px 16px;
-border: 1px solid #e9d9e8;
-border-radius: 14px;
-background: #fffafd;
-color: var(--text);
-font: inherit;
-outline: none;
-transition: border-color 0.2s, box-shadow 0.2s;
+  min-height: 48px;
 }
 
-input[type="text"]:focus,
-select:focus {
-border-color: var(--pink);
-box-shadow: 0 0 0 4px rgba(233, 169, 195, 0.18);
+textarea:focus,
+select:focus,
+input[type="text"]:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
 }
 
 button {
-width: 100%;
-min-height: 50px;
-margin-top: 16px;
-padding: 13px 20px;
-border: none;
-border-radius: 14px;
-background: linear-gradient(135deg, #eab0c9, #cbb6eb);
-color: #4e3c56;
-font: inherit;
-font-weight: 700;
-cursor: pointer;
-transition: transform 0.2s, box-shadow 0.2s;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 14px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #ffffff;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
 }
 
 button:hover {
-transform: translateY(-2px);
-box-shadow: 0 8px 18px rgba(174, 129, 174, 0.22);
+  background: var(--accent-dark);
+  transform: translateY(-1px);
 }
 
+/* result headline */
 h2 {
-margin-top: 28px;
-padding: 20px 24px;
-border-radius: 20px;
-background: #f0e8fb;
-color: #765b91;
-text-align: center;
-overflow-wrap: anywhere;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  padding: 18px 24px;
+  border: 1px solid var(--accent-line);
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
+h2.unsure {
+  border-color: var(--warn-line);
+  background: var(--warn-soft);
+  color: var(--warn);
+}
+
+/* merchant / amount / type / confidence rows */
 p {
-line-height: 1.8;
-overflow-wrap: anywhere;
-}
-
-form p {
-color: var(--muted);
-font-size: 14px;
+  margin: 0;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 body > p {
-padding: 14px 20px;
-border-radius: 14px;
-background: rgba(255, 255, 255, 0.75);
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+  font-size: 15px;
+}
+
+/* "Wrong category?" box */
+summary {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+details[open] summary {
+  color: var(--ink);
+}
+
+details form {
+  margin-top: 10px;
+  box-shadow: none;
 }
 
 @media (max-width: 480px) {
-body {
-padding: 32px 15px;
-}
+  body {
+    padding: 36px 15px 60px;
+  }
 
-form {
-padding: 20px;
-border-radius: 20px;
-}
+  form {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
