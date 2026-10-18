@@ -30,6 +30,46 @@ merchants = {
                   "Christ University", "VIT University"],
 }
 
+extra_merchants = {
+    "Food": ["Biryani By Kilo", "Box8", "EatSure", "Ovenstory", "Chaayos", "Theobroma",
+             "Baskin Robbins", "Naturals Ice Cream", "Bikanervala", "Taco Bell",
+             "Third Wave Coffee", "Blue Tokai", "Mad Over Donuts", "Paradise Biryani",
+             "FreshMenu", "Barista", "Costa Coffee", "Mojo Pizza", "La Pinoz Pizza",
+             "Goli Vada Pav"],
+    "Transport": ["Mumbai Metro", "Bangalore Metro", "BMTC Bus", "KSRTC", "MSRTC",
+                  "Air India", "IndiGo", "Vistara", "SpiceJet", "AbhiBus", "Zoomcar",
+                  "Revv", "Reliance Petrol Pump", "NHAI Toll", "Park Plus", "Meru Cabs",
+                  "InDrive", "Goibibo", "Cleartrip", "Akasa Air"],
+    "Bills": ["BSES", "MSEDCL", "BESCOM", "TNEB", "Torrent Power", "HP Gas",
+              "Bharat Gas", "Indane", "Vodafone Idea", "MTNL", "Videocon d2h",
+              "Sun Direct", "Airtel Xstream", "Spectra Broadband", "HDFC Life",
+              "SBI Life", "ICICI Prudential", "Max Life", "Credit Card Bill",
+              "Postpaid Bill"],
+    "Shopping": ["H&M", "Max Fashion", "FabIndia", "Tanishq", "Titan", "Reliance Digital",
+                 "Vijay Sales", "Snapdeal", "Tata Cliq", "Urban Ladder", "IKEA",
+                 "Home Centre", "Puma", "Nike", "Adidas", "Levis", "Biba", "Mamaearth",
+                 "Purplle", "FirstCry", "Bewakoof", "Uniqlo", "Wakefit"],
+    "Entertainment": ["Apple Music", "Wynk Music", "JioSaavn", "Voot", "Lionsgate Play",
+                      "Discovery Plus", "MX Player", "PlayStation", "Xbox", "Cinepolis",
+                      "Carnival Cinemas", "Paytm Insider", "Twitch", "Crunchyroll",
+                      "Mubi", "Hungama", "Imagica", "Kidzania", "Ramoji Film City",
+                      "Nicco Park"],
+    "Health": ["Medanta", "AIIMS", "Narayana Health", "Metropolis Healthcare",
+               "SRL Diagnostics", "Clove Dental", "Sabka Dentist", "HealthifyMe",
+               "Kokilaben Hospital", "Lilavati Hospital", "Columbia Asia",
+               "Rainbow Hospital", "Care Hospitals", "Wockhardt Hospital",
+               "Pristyn Care", "Docprime", "Healthians", "Orange Health",
+               "Guardian Pharmacy"],
+    "Education": ["Internshala", "LinkedIn Learning", "Pluralsight", "edX", "Udacity",
+                  "Codecademy", "DataCamp", "GeeksforGeeks", "Aakash Institute",
+                  "Resonance", "Career Launcher", "IGNOU", "Delhi Public School",
+                  "Kendriya Vidyalaya", "NIIT", "Aptech", "British Council",
+                  "Duolingo", "Cuemath", "Leetcode Premium"],
+}
+
+for cat, names in extra_merchants.items():
+    merchants[cat].extend(names)
+
 keywords = {
     "Food": ["restaurant", "cafe", "dinner", "lunch", "pizza", "biryani",
              "sandwich", "bakery", "snacks", "tiffin"],
@@ -45,8 +85,8 @@ keywords = {
                "lab", "diagnostics", "dental", "checkup", "tablets"],
     "Education": ["tuition", "course", "exam fee", "college fee", "school fees",
                   "admission", "semester fee", "stationery", "textbook",
-                  "coaching", "certification", "workshop",
-                  "college", "university", "institute"],
+                  "coaching", "certification", "seminar",
+                  "college", "university", "institute","chhatrapati shivaji maharaj university", "indian institute of technology","indian institute of management", "indian institute of science", "indian institute of technology delhi", "indian institute of technology bombay", "indian institute of technology kanpur", "indian institute of technology madras", "indian institute of technology kharagpur", "indian institute of technology roorkee", "indian institute of technology guwahati", "indian institute of technology hyderabad", "indian institute of technology patna", "indian institute of technology bhubaneswar", "indian institute of technology indore", "indian institute of technology jodhpur", "indian institute of technology varanasi", "indian institute of technology dhanbad", "indian institute of technology palakkad", "indian institute of technology tirupati", "indian institute of technology goa", "indian institute of management ahmedabad", "indian institute of management bangalore", "indian institute of management calcutta", "indian institute of management lucknow", "indian institute of management kozhikode", "indian institute of management indore", "indian institute of management trichy", "indian institute of management udaipur"],
 }
 
 templates = [
@@ -79,7 +119,7 @@ transfer_templates = [
 ]
 
 received_keywords = ["salary", "stipend", "refund", "cashback", "interest",
-                     "received", "credited", "deposit", "scholarship",
+                     "received", "credited", "deposit", "grant",
                      "reward", "reimbursement", "payout"]
 
 received_templates = [
@@ -92,18 +132,33 @@ received_templates = [
 
 all_merchants = [m for names in merchants.values() for m in names]
 
+merchant_templates = [t for t in templates if "{m}" in t]
+keyword_templates = [t for t in templates if "{m}" not in t]
+
+ROWS_PER_CATEGORY = 600
+KEYWORD_ROWS = 60
+
 rows = []
-for category in merchants:
-    for i in range(120):
-        text = random.choice(templates).format(
-            m=random.choice(merchants[category]),
+for category, names in merchants.items():
+    per_merchant = (ROWS_PER_CATEGORY - KEYWORD_ROWS) // len(names)
+    for name in names:
+        for i in range(per_merchant):
+            text = random.choice(merchant_templates).format(
+                m=name,
+                k=random.choice(keywords[category]),
+                n=random.randint(1000, 9999),
+                a=random.randint(50, 2500),
+            )
+            rows.append((text, category))
+    for i in range(KEYWORD_ROWS):
+        text = random.choice(keyword_templates).format(
             k=random.choice(keywords[category]),
             n=random.randint(1000, 9999),
             a=random.randint(50, 2500),
         )
         rows.append((text, category))
 
-for i in range(120):
+for i in range(ROWS_PER_CATEGORY):
     text = random.choice(transfer_templates).format(
         p=random_name(),
         k=random.choice(transfer_keywords),
@@ -112,7 +167,7 @@ for i in range(120):
     )
     rows.append((text, "Money Transfer"))
 
-for i in range(120):
+for i in range(ROWS_PER_CATEGORY):
     text = random.choice(received_templates).format(
         p=random_name(),
         m=random.choice(all_merchants),

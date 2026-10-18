@@ -1,4 +1,9 @@
 from predict import predict_with_confidence
+from parser import parse
+
+def score(text):
+    merchant = parse(text)["merchant"]
+    return predict_with_confidence(merchant if merchant else text)
 
 clear = [
     ("Rasoi Dhaba Kolkata", "Food"),
