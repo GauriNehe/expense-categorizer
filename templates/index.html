@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Smart Expense Categorizer</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=3">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=4">
 </head>
 <body>
   <h1>Smart Expense Categorizer</h1>
@@ -12,6 +12,12 @@
     <textarea name="text" rows="4" cols="50" placeholder="Paste an SMS or a bank narration" required></textarea>
     <button type="submit">Categorize</button>
   </form>
+
+  <div class="chips">
+    {% for c in categories %}
+      <span class="chip">{{ icons.get(c, '') }} {{ c }}</span>
+    {% endfor %}
+  </div>
 
   {% if saved %}
     <p>Saved as {{ icons.get(saved, '') }} {{ saved }}. Thank you!</p>
